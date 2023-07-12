@@ -15,12 +15,16 @@
 
 # terraform-plugin-framework-supertype
 
-supertype is a custom type of Terraform type for resources and datasources, along with a common field that enables you to manipulate Go object and Terrform object. supertype is compatible with [tfplugindocs](https://github.com/hashicorp/terraform-plugin-docs/cmd/tfplugindocs).
+supertype is a custom type of Terraform type issue from Terraform schema, like SuperShema it's a meta Objet and function to permit you to manipulate Go object and Terrform object.
 
 This is a try to solve these issues :
 
-* Don't repeat yourself : common fields applied on resources and datasources.
-* Auto format attributes markdown description with validators and plan modifiers descriptions, default values...
+* CustomType is defined in the Schema on each Attributes fields on resources and datasources.
+* Each kind of Terraform Type is take into account:
+* * Simple: String, Bool, Int64, Float64
+* * Array: List, Map, Set
+* * Nested: ListNested, MapNested, SetNested, SingleNested
+
 
 ## Documentation
 
