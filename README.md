@@ -1,3 +1,13 @@
+# Please set your repository in file:
+- .golangci.yml
+
+# Add secret in your Gihub
+- GITHUB_TOKEN in dependabot_changelog
+- CHANGELOG_PAT in generate_changelog.yml (to Push on main)
+- DOC_PAT in page.yml (to generate documentation)
+
+# Show example below:
+
 <div align="center">
     <a href="https://github.com/FrangipaneTeam/terraform-plugin-framework-supertype/releases/latest">
       <img alt="Latest release" src="https://img.shields.io/github/v/release/FrangipaneTeam/terraform-plugin-framework-supertype?style=for-the-badge&logo=starship&color=C9CBFF&logoColor=D9E0EE&labelColor=302D41&include_prerelease&sort=semver" />
@@ -13,7 +23,7 @@
     </a>
 </div>
 
-# terraform-plugin-framework-supertype
+## terraform-plugin-framework-supertype
 
 supertype is a custom type of Terraform type issue from Terraform schema, like SuperShema it's a meta Objet and function to permit you to manipulate Go object and Terrform object.
 
@@ -26,6 +36,6 @@ This is a try to solve these issues :
 * * Nested: ListNested, MapNested, SetNested, SingleNested
 
 
-## Documentation
+### Documentation
 
 For more information about the supertype, please refer to the [documentation](https://github.frangipane.io/terraform/supertype/why).
